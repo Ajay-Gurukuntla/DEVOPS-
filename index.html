@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #005f73;
+    }
+
+    .output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Demo Page</h1>
+  </header>
+
+  <main>
+    <p>This is a basic HTML page with CSS styling and JavaScript interaction.</p>
+    
+    <button onclick="sayHello()">Click Me</button>
+    
+    <div class="output" id="output"></div>
+  </main>
+
+  <script>
+    function sayHello() {
+      document.getElementById("output").innerText = "Hello! Thanks for clicking the button. 👋";
+    }
+  </script>
+
+</body>
+</html>
